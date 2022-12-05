@@ -1,21 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'baseweb.html.twig' %}
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Profile</title>
-  <link rel="stylesheet" href="../CSS/style-09.css">
-  <link rel="stylesheet" href="../CSS/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Questrial:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet"
-    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-</head>
-
+{% block body %}
 <body style="opacity: 0.95;">
   <div class="container">
     <!-- Header -->
@@ -25,7 +10,7 @@
         <p>Đây là cách các thành viên khác của cộng đồng trực tuyến xem hồ sơ của bạn</p>
       </div>
       <div class="out_btn">
-        <a href="profile.html">
+        <a href="{{path ('profile')}}">
           <button>Thoát chế độ xem trước</button>
         </a>
       </div>
@@ -232,4 +217,4 @@
 </body>
 <script src="../JS/profile.js"></script>
 
-</html>
+{% endblock %}

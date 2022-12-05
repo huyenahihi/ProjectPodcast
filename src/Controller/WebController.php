@@ -64,4 +64,16 @@ class WebController extends AbstractController
     {
         return $this->render('WebUser/course_detail.html.twig');
     }
+
+    #[Route('/profile', name: 'profile')]
+    public function profile(): Response
+    {
+        return $this->render('WebUser/profile.html.twig');
+    }
+
+    #[Route('/public_profile', name: 'public_profile')]
+    public function public_profile(): Response
+    {
+        return $this->render('WebUser/public_profile.html.twig');
+    }
 }
