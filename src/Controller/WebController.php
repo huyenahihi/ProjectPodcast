@@ -41,4 +41,14 @@ class WebController extends AbstractController
     {
         return $this->render('WebUser/courses.html.twig');
     }
+    #[Route('/blog_detail', name: 'blog_detail')]
+    public function blog_detail(): Response
+    {
+        return $this->render('WebUser/blog_detail.html.twig');
+    }
+    #[Route('/blog_title', name: 'blog_title')]
+    public function blog_title(): Response
+    {
+        return $this->render('WebUser/blog_title.html.twig');
+    }
 }

@@ -11,10 +11,16 @@
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 			<link rel="preconnect" href="https://fonts.googleapis.com">
 			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-			  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-
+			<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 			<link href="https://fonts.googleapis.com/css2?family=Questrial:wght@400;700&display=swap" rel="stylesheet">
-			 <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+			<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+			{# <link rel="stylesheet" href="../../node_modules/jquery.emojiarea.js/docs/assets/css/reset.css">
+			<link rel="stylesheet" href="../../node_modules/jquery.emojiarea.js/docs/assets/css/style.css">
+			<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+			{# <script src="../../node_modules/jquery.emojiarea.js/docs/assets/js/jquery.emojiarea.js"></script>
+			  <script src="../../node_modules/jquery.emojiarea.js/docs/assets/js/main.js"></script> #}
+
 		{% endblock %}
 		{% block header %}
 			<div
@@ -39,25 +45,25 @@
 									</span>
 									<ul class="sub_menu">
 										<li>
-											<a href="blog_title.html">Kỹ năng tương lai</a>
+											<a href="{{path ('blog_title')}}">Kỹ năng tương lai</a>
 										</li>
 										<li>
-											<a href="blog_title.html">Phát triển bản thân</a>
+											<a href="{{path ('blog_title')}}">Phát triển bản thân</a>
 										</li>
 										<li>
-											<a href="blog_title.html">Kinh doanh và Tech</a>
+											<a href="{{path ('blog_title')}}">Kinh doanh và Tech</a>
 										</li>
 										<li>
-											<a href="blog_title.html">Travel</a>
+											<a href="{{path ('blog_title')}}">Travel</a>
 										</li>
 										<li>
-											<a href="blog_title.html">Cuộc sống hạnh phúc</a>
+											<a href="{{path ('blog_title')}}">Cuộc sống hạnh phúc</a>
 										</li>
 										<li>
-											<a href="blog_title.html">Thơ & Tản văn</a>
+											<a href="{{path ('blog_title')}}">Thơ & Tản văn</a>
 										</li>
 										<li>
-											<a href="blog_title.html">Phỏng vấn báo chí</a>
+											<a href="{{path ('blog_title')}}">Phỏng vấn báo chí</a>
 										</li>
 									</ul>
 								</li>
@@ -129,44 +135,44 @@
 								<span class="firstspan">40</span>
 							</div>
 							<!-- <ul id="notificationMenu" class="dropdown-menu notification-menu">
-							            <div class="dropdown-menu-header">
-							              <span>Thông báo</span>
-							            </div>
-							            <div class="dropdown-menu-content overlay-scrollbar">
-							              <li class="dropdown-menu-item">
-							                <a href="#" class="dropdown-menu-link">
-							                  <div>
-							                    <img src="../../IMG/dangthuhuyen_blog.jpg" alt="">
-							                  </div>
-							                  <span>
-							                    Hãy cập nhật và chia sẻ những kiến thức mới cùng tôi
-							                    <br>
-							                    <span>
-							                      2 giờ trước
-							                    </span>
-							                  </span>
-							                </a>
-							              </li>
-							              <li class="dropdown-menu-item">
-							                <a href="#" class="dropdown-menu-link">
-							                  <div>
-							                    <img src="../../IMG/dangthuhuyen_blog.jpg" alt="">
-							                  </div>
-							                  <span>
-							                    Hãy cập nhật và chia sẻ những kiến thức mới cùng tôi
-							                    <br>
-							                    <span>
-							                      4 giờ trước
-							                    </span>
-							                  </span>
-							                </a>
-							              </li>
-							            </div>
-							            <div class="dropdown-menu-footer">
-							              <span>Tất cả thông báo</span>
-							            </div>
-							          </ul>
-							          <img src="../../IMG/dangthuhuyen_blog.jpg" class="user-img" alt="Tài khoản" title="Tài khoản" id="profile"> -->
+														            <div class="dropdown-menu-header">
+														              <span>Thông báo</span>
+														            </div>
+														            <div class="dropdown-menu-content overlay-scrollbar">
+														              <li class="dropdown-menu-item">
+														                <a href="#" class="dropdown-menu-link">
+														                  <div>
+														                    <img src="../../IMG/dangthuhuyen_blog.jpg" alt="">
+														                  </div>
+														                  <span>
+														                    Hãy cập nhật và chia sẻ những kiến thức mới cùng tôi
+														                    <br>
+														                    <span>
+														                      2 giờ trước
+														                    </span>
+														                  </span>
+														                </a>
+														              </li>
+														              <li class="dropdown-menu-item">
+														                <a href="#" class="dropdown-menu-link">
+														                  <div>
+														                    <img src="../../IMG/dangthuhuyen_blog.jpg" alt="">
+														                  </div>
+														                  <span>
+														                    Hãy cập nhật và chia sẻ những kiến thức mới cùng tôi
+														                    <br>
+														                    <span>
+														                      4 giờ trước
+														                    </span>
+														                  </span>
+														                </a>
+														              </li>
+														            </div>
+														            <div class="dropdown-menu-footer">
+														              <span>Tất cả thông báo</span>
+														            </div>
+														          </ul>
+														          <img src="../../IMG/dangthuhuyen_blog.jpg" class="user-img" alt="Tài khoản" title="Tài khoản" id="profile"> -->
 							<div class="logout">
 								<ul>
 									<li>
@@ -189,9 +195,7 @@
 							<div class="login__icon">
 								<i class="fas fa-user"></i>
 							</div>
-							<a href="{{path ('signin')}}"
-								<button>Login</button>
-							</a>
+							<aLogin</button href="{{path ('signin')}}" <button>></a>
 						</div>
 						<div class="toggle" onclick="toggleMenu()"></div>
 					</div>
