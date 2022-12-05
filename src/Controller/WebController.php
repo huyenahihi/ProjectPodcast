@@ -31,16 +31,6 @@ class WebController extends AbstractController
     {
         return $this->render('WebUser/blog.html.twig');
     }
-    #[Route('/podcast', name: 'podcast')]
-    public function podcast(): Response
-    {
-        return $this->render('WebUser/podcast.html.twig');
-    }
-    #[Route('/courses', name: 'courses')]
-    public function courses(): Response
-    {
-        return $this->render('WebUser/courses.html.twig');
-    }
     #[Route('/blog_detail', name: 'blog_detail')]
     public function blog_detail(): Response
     {
@@ -50,5 +40,28 @@ class WebController extends AbstractController
     public function blog_title(): Response
     {
         return $this->render('WebUser/blog_title.html.twig');
+    }
+
+    #[Route('/podcast', name: 'podcast')]
+    public function podcast(): Response
+    {
+        return $this->render('WebUser/podcast.html.twig');
+    }
+    #[Route('/podcast_detail', name: 'podcast_detail')]
+    public function podcast_detail(): Response
+    {
+        return $this->render('WebUser/podcast_detail.html.twig');
+    }
+
+    #[Route('/courses', name: 'courses')]
+    public function courses(): Response
+    {
+        return $this->render('WebUser/courses.html.twig');
+    }  
+    
+    #[Route('/course_detail', name: 'course_detail')]
+    public function course_detail(): Response
+    {
+        return $this->render('WebUser/course_detail.html.twig');
     }
 }
